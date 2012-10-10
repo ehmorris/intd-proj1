@@ -90,7 +90,10 @@ section {
         section figure.graph ul input:focus {
           border-color: #ff702a;
           outline: none; }
+        section figure.graph ul input.invalid {
+          border-color: red; }
       section figure.graph ul .bar {
+        border: 1px solid transparent;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -105,6 +108,10 @@ section {
         z-index: 1; }
         section figure.graph ul .bar:last-child {
           margin-right: 0; }
+        section figure.graph ul .bar .guess:before {
+          content: '(you guessed '; }
+        section figure.graph ul .bar .guess:after {
+          content: ')'; }
         section figure.graph ul .bar .fill {
           background: black;
           position: absolute;
@@ -113,6 +120,13 @@ section {
           left: 0px;
           width: 100%;
           z-index: -1; }
+      section figure.graph ul .bar.small {
+        font-size: 60%; }
+      section figure.graph ul .bar.big {
+        font-size: 200%; }
+      section figure.graph ul .bar.biggest {
+        color: #ff702a;
+        font-size: 300%; }
   section .action {
     margin-top: 4rem; }
     section .action a {

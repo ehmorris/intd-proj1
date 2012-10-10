@@ -95,9 +95,14 @@ section {
           border-color: $highlight-color;
           outline: none;
         }
+
+        &.invalid {
+          border-color: red;
+        }
       }
 
       .bar {
+        border: 1px solid transparent;
         @include box-sizing(border-box);
         color: darken($background-color, 50%);
         display: inline-block;
@@ -106,12 +111,35 @@ section {
         @include span-columns(8 of 10);
         z-index: 1;
 
+        .guess {
+          &:before {
+            content: '(you guessed ';
+          }
+
+          &:after {
+            content: ')';
+          }
+        }
+
         .fill {
           background: $main-color;
           @include position(absolute, 0px 0 0px 0px);
           width: 100%;
           z-index: -1;
         }
+      }
+
+      .bar.small {
+        font-size: 60%;
+      }
+
+      .bar.big {
+        font-size: 200%;
+      }
+
+      .bar.biggest {
+        color: $highlight-color;
+        font-size: 300%;
       }
     }
   }
