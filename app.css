@@ -61,6 +61,7 @@ section {
       margin: 0;
       padding: 0; }
       section figure.graph ul li {
+        overflow: auto;
         padding: 0.5rem 0; }
       section figure.graph ul label {
         display: inline-block;
@@ -89,13 +90,39 @@ section {
         section figure.graph ul input:focus {
           border-color: #ff702a;
           outline: none; }
+      section figure.graph ul .bar {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        color: gray;
+        display: inline-block;
+        padding: 0.5rem;
+        position: relative;
+        display: block;
+        float: left;
+        margin-right: 2.84259%;
+        width: 79.43148%;
+        z-index: 1; }
+        section figure.graph ul .bar:last-child {
+          margin-right: 0; }
+        section figure.graph ul .bar .fill {
+          background: black;
+          position: absolute;
+          top: 0px;
+          bottom: 0px;
+          left: 0px;
+          width: 100%;
+          z-index: -1; }
   section .action {
     margin-top: 4rem; }
     section .action a {
       background: #ff702a;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
       color: #fff;
       display: inline-block;
-      padding: 1rem 0;
+      padding: 1rem 0.5rem;
       position: relative;
       display: block;
       float: left;

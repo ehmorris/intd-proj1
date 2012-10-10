@@ -69,6 +69,7 @@ section {
       padding: 0;
 
       li {
+        overflow: auto;
         padding: $base-unit/2 0;
       }
 
@@ -95,6 +96,23 @@ section {
           outline: none;
         }
       }
+
+      .bar {
+        @include box-sizing(border-box);
+        color: darken($background-color, 50%);
+        display: inline-block;
+        padding: $base-unit/2;
+        position: relative;
+        @include span-columns(8 of 10);
+        z-index: 1;
+
+        .fill {
+          background: $main-color;
+          @include position(absolute, 0px 0 0px 0px);
+          width: 100%;
+          z-index: -1;
+        }
+      }
     }
   }
 
@@ -103,9 +121,10 @@ section {
 
     a {
       background: $highlight-color;
+      @include box-sizing(border-box);
       color: #fff;
       display: inline-block;
-      padding: $base-unit 0;
+      padding: $base-unit $base-unit/2;
       position: relative;
       @include span-columns(4 of 10);
       text-align: center;

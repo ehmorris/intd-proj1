@@ -17,4 +17,15 @@ $(function() {
     return false;
   });
 
+  // size graphs relative to largest value
+  $('figure.graph').each(function() {
+  var max = $(this).data('max');
+
+  // size each bar fill
+  $(this).find('li').each(function() {
+    var val = $(this).find('.bar').data('val');
+    var percentage = (val / max) * 100;
+    $(this).find('.bar .fill').width(percentage+'%');
+  });
+});
 });
