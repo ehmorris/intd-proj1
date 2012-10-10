@@ -52,6 +52,9 @@ section {
       letter-spacing: 1px;
       margin: 0 0 2rem;
       text-transform: uppercase; }
+      section hgroup h1 a {
+        color: #ff702a;
+        text-decoration: none; }
     section hgroup h2 {
       margin: 0 0 4rem; }
   section figure.graph {
@@ -146,27 +149,30 @@ section {
       text-decoration: none; }
       section .action a:last-child {
         margin-right: 0; }
-      section .action a.next:after {
-        background: #ff702a;
-        content: '';
-        display: block;
-        height: 2.25rem;
-        margin-top: -1.125rem;
-        position: absolute;
-        right: -1.125rem;
-        top: 50%;
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-        width: 2.25rem; }
-      section .action a.next:hover:after {
-        background: #f65100; }
-      section .action a.next:active:after {
-        background: black; }
+      section .action a.next {
+        padding-right: 2rem; }
+        section .action a.next:after {
+          background: #ff702a;
+          content: '';
+          display: block;
+          height: 2.25rem;
+          margin-top: -1.125rem;
+          position: absolute;
+          right: -1.125rem;
+          top: 50%;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          width: 2.25rem; }
+        section .action a.next:hover:after {
+          background: #f65100; }
+        section .action a.next:active:after {
+          background: black; }
       section .action a:hover {
         background: #f65100; }
       section .action a:active {
         background: black;
-        padding: 1.1rem 0 0.9rem; }
+        padding-bottom: 0.9rem;
+        padding-top: 1.1rem; }

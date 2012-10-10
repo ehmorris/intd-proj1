@@ -53,6 +53,11 @@ section {
       letter-spacing: 1px;
       margin: 0 0 $base-unit*2;
       text-transform: uppercase;
+
+      a {
+        color: $highlight-color;
+        text-decoration: none;
+      }
     }
 
     h2 {
@@ -159,6 +164,8 @@ section {
       text-decoration: none;
 
       &.next {
+        padding-right: $base-unit*2;
+
         &:after {
           $size: $base-unit*2.25;
           background: $highlight-color;
@@ -188,7 +195,8 @@ section {
 
       &:active {
         background: $main-color;
-        padding: $base-unit*1.1 0 $base-unit*.9;
+        padding-bottom: $base-unit*.9;
+        padding-top: $base-unit*1.1;
       }
     }
   }

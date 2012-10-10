@@ -56,4 +56,5 @@ $(function() {
       $(this).find('.bar .fill').width(percentage+'%');
     });
   });
+
 });
