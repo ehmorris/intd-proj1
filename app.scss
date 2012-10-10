@@ -1,0 +1,95 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+/* VARIABLES
+ *********************************************************/
+
+$highlight-color: #FF702A;
+$main-color: #000;
+$base-unit: 1rem;
+
+/* MIXINS
+ *********************************************************/
+
+@mixin font-condensed {
+  font-family: "franklin-gothic-urw-cond", sans-serif;
+  font-weight: 700;
+}
+
+@mixin font {
+  font-family: "franklin-gothic-urw",sans-serif;
+  font-weight: 400;
+}
+
+/* STYLES
+ *********************************************************/
+
+body {
+  color: $main-color;
+  @include font;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+section {
+  @include outer-container;
+  overflow: scroll;
+  padding: $base-unit*2 0;
+  @include position(absolute, 0px 0 0px 0);
+  @include shift(1);
+  @include span-columns(10);
+  @include omega;
+  -webkit-overflow-scrolling: touch;
+
+  hgroup {
+    @include fill-parent;
+
+    h1 {
+      @include font-condensed;
+      font-size: 300%;
+      letter-spacing: 1px;
+      margin: 0 0 3rem;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0 0 3rem;
+    }
+  }
+
+  .action {
+    a {
+      background: $highlight-color;
+      color: #fff;
+      display: inline-block;
+      padding: 1em 0;
+      position: relative;
+      @include span-columns(4 of 10);
+      text-align: center;
+      text-decoration: none;
+
+      &:after {
+        $size: 2.25rem;
+        background: $highlight-color;
+        content: '';
+        display: block;
+        height: $size;
+        margin-top: -$size/2;
+        position: absolute;
+        right: -$size/2;
+        top: 50%;
+        @include transform(rotate(45deg));
+        width: $size;
+      }
+
+      &:hover, &:hover:after {
+        background: darken($highlight-color, 10%);
+      }
+
+      &:active, &:active:after {
+        background: $main-color;
+      }
+    }
+  }
+}

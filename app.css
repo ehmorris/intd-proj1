@@ -1,0 +1,88 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* VARIABLES
+ *********************************************************/
+/* MIXINS
+ *********************************************************/
+/* STYLES
+ *********************************************************/
+body {
+  color: black;
+  font-family: "franklin-gothic-urw",sans-serif;
+  font-weight: 400;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+section {
+  zoom: 1;
+  max-width: 75.99879em;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+  padding: 2rem 0;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin-left: 8.5298%;
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-right: 0;
+  -webkit-overflow-scrolling: touch; }
+  section:before, section:after {
+    content: "";
+    display: table; }
+  section:after {
+    clear: both; }
+  section:last-child {
+    margin-right: 0; }
+  section hgroup {
+    width: 100%; }
+    section hgroup h1 {
+      font-family: "franklin-gothic-urw-cond", sans-serif;
+      font-weight: 700;
+      font-size: 300%;
+      letter-spacing: 1px;
+      margin: 0 0 3rem;
+      text-transform: uppercase; }
+    section hgroup h2 {
+      margin: 0 0 3rem; }
+  section .action a {
+    background: #ff702a;
+    color: #fff;
+    display: inline-block;
+    padding: 1em 0;
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 2.84259%;
+    width: 38.29445%;
+    text-align: center;
+    text-decoration: none; }
+    section .action a:last-child {
+      margin-right: 0; }
+    section .action a:after {
+      background: #ff702a;
+      content: '';
+      display: block;
+      height: 2.25rem;
+      margin-top: -1.125rem;
+      position: absolute;
+      right: -1.125rem;
+      top: 50%;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      width: 2.25rem; }
+    section .action a:hover, section .action a:hover:after {
+      background: #f65100; }
+    section .action a:active, section .action a:active:after {
+      background: black; }
