@@ -4,11 +4,11 @@
   box-sizing: border-box; }
 
 /* VARIABLES
- *********************************************************/
+ ******************************************************************************/
 /* MIXINS
- *********************************************************/
+ ******************************************************************************/
 /* STYLES
- *********************************************************/
+ ******************************************************************************/
 body {
   color: black;
   font-family: "franklin-gothic-urw",sans-serif;
@@ -18,6 +18,7 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 section {
+  background: white;
   zoom: 1;
   max-width: 75.99879em;
   text-align: left;
@@ -49,40 +50,82 @@ section {
       font-weight: 700;
       font-size: 300%;
       letter-spacing: 1px;
-      margin: 0 0 3rem;
+      margin: 0 0 2rem;
       text-transform: uppercase; }
     section hgroup h2 {
-      margin: 0 0 3rem; }
-  section .action a {
-    background: #ff702a;
-    color: #fff;
-    display: inline-block;
-    padding: 1em 0;
-    position: relative;
-    display: block;
-    float: left;
-    margin-right: 2.84259%;
-    width: 38.29445%;
-    text-align: center;
-    text-decoration: none; }
-    section .action a:last-child {
-      margin-right: 0; }
-    section .action a:after {
+      margin: 0 0 4rem; }
+  section figure.graph {
+    margin: 0; }
+    section figure.graph ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      section figure.graph ul li {
+        padding: 0.5rem 0; }
+      section figure.graph ul label {
+        display: inline-block;
+        padding: 0.5rem 0;
+        display: block;
+        float: left;
+        margin-right: 2.84259%;
+        width: 17.72593%;
+        text-align: right; }
+        section figure.graph ul label:last-child {
+          margin-right: 0; }
+      section figure.graph ul input {
+        border: 0;
+        border: 1px solid gray;
+        border-radius: 0.2rem;
+        -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: "franklin-gothic-urw",sans-serif;
+        font-weight: 400;
+        font-size: 100%;
+        margin: 0 0 0 1rem;
+        padding: 0.5rem 1rem; }
+        section figure.graph ul input:focus {
+          border-color: #ff702a;
+          outline: none; }
+  section .action {
+    margin-top: 4rem; }
+    section .action a {
       background: #ff702a;
-      content: '';
+      color: #fff;
+      display: inline-block;
+      padding: 1rem 0;
+      position: relative;
       display: block;
-      height: 2.25rem;
-      margin-top: -1.125rem;
-      position: absolute;
-      right: -1.125rem;
-      top: 50%;
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-      width: 2.25rem; }
-    section .action a:hover, section .action a:hover:after {
-      background: #f65100; }
-    section .action a:active, section .action a:active:after {
-      background: black; }
+      float: left;
+      margin-right: 2.84259%;
+      width: 38.29445%;
+      text-align: center;
+      text-decoration: none; }
+      section .action a:last-child {
+        margin-right: 0; }
+      section .action a.next:after {
+        background: #ff702a;
+        content: '';
+        display: block;
+        height: 2.25rem;
+        margin-top: -1.125rem;
+        position: absolute;
+        right: -1.125rem;
+        top: 50%;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        width: 2.25rem; }
+      section .action a.next:hover:after {
+        background: #f65100; }
+      section .action a.next:active:after {
+        background: black; }
+      section .action a:hover {
+        background: #f65100; }
+      section .action a:active {
+        background: black;
+        padding: 1.1rem 0 0.9rem; }
